@@ -40,8 +40,7 @@ h1 {
    * 2. Show the overflow in Edge and IE.
    */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -75,8 +74,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -208,8 +206,7 @@ fieldset {
    *    `fieldset` elements in all browsers.
    */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -240,8 +237,7 @@ textarea {
    */
 [type='checkbox'],
 [type='radio'] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -326,21 +322,15 @@ body {
 .header {
   border-bottom: 1px solid grey; }
   .header .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     height: 80px; }
     .header .nav .menu {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
       gap: 20px; }
+    .header .nav .logo {
+      margin-right: 20%; }
 
 .container {
   max-width: 1200px;
@@ -353,5 +343,39 @@ a {
 
 ul {
   list-style: none; }
+
+.top {
+  min-height: calc(100vh - 101px);
+  background-image: url(../../img/top-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center; }
+  .top .title {
+    padding-top: 8%;
+    font-size: 96px;
+    margin-bottom: 5px; }
+  .top .subtitle {
+    font-size: 36px;
+    margin-bottom: 5px; }
+  .top .top__text {
+    font-size: 13px;
+    margin-bottom: 50px; }
+  .top .buy__text {
+    padding-top: 6px;
+    font-size: 13px; }
+  .top .buy-btn {
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+    text-transform: uppercase;
+    padding: 1px;
+    display: flex; }
+    .top .buy-btn .buy-btn__text {
+      color: #f6f4f5;
+      padding: 20px 110px; }
+    .top .buy-btn .buy-btn__price {
+      color: #5c5c5e;
+      padding: 20px 105px;
+      background-color: #f6f4f5; }
 
 /*# sourceMappingURL=style.css.map */
