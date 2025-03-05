@@ -1,0 +1,18 @@
+.games {
+  margin-top: 50px;
+
+  .games-list {
+    display: flex;
+    flex-wrap: wrap; /* Перенос на новую строку */
+    gap: 40px; /* Отступ между элементами */
+    justify-content: center; /* Центрирование по горизонтали */
+
+    div {
+      width: 30%;
+
+      img {
+        border-radius: 15px;
+      }
+    }
+  }
+}

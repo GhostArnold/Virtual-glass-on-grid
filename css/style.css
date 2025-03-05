@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -346,7 +347,7 @@ ul {
 
 .top {
   min-height: calc(100vh - 101px);
-  background-image: url(../../img/top-background.jpeg);
+  background-image: url(../../img/features3-play.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center; }
@@ -377,5 +378,85 @@ ul {
       color: #5c5c5e;
       padding: 20px 105px;
       background-color: #f6f4f5; }
+
+.footer {
+  border: 1px solid grey;
+  padding: 50px 0; }
+  .footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer .footer-content .footer__nav .menu {
+      display: flex;
+      gap: 20px; }
+    .footer .footer-content .footer__logo {
+      margin-right: 15%; }
+
+.shop {
+  margin: 15px 0;
+  margin-bottom: 40px; }
+  .shop .cards-grid {
+    display: grid;
+    place-content: center;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'product1 product1 product2 product3' 'product1 product1 product4 product5' 'product6 product6 product6 product6' 'product6 product6 product6 product6';
+    grid-auto-rows: 180px; }
+    .shop .cards-grid .card {
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black; }
+      .shop .cards-grid .card:hover {
+        transform: scale(1.1);
+        /* Увеличивает картинку в 1.1 раза */
+        transition: transform 0.3s ease;
+        /* Плавная анимация */ }
+    .shop .cards-grid .product1 {
+      grid-area: product1;
+      background-image: url(../../img/1.jpg);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .shop .cards-grid .product2 {
+      grid-area: product2;
+      background-image: url(../../img/2.jpg);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .shop .cards-grid .product3 {
+      grid-area: product3;
+      background-image: url(../../img/3.jpg);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .shop .cards-grid .product4 {
+      grid-area: product4;
+      background-image: url(../../img/4.jpg);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .shop .cards-grid .product5 {
+      grid-area: product5;
+      background-image: url(../../img/5.jpg);
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .shop .cards-grid .product6 {
+      grid-area: product6;
+      background-image: url(../../img/women.jpg);
+      background-size: cover;
+      background-repeat: no-repeat; }
+
+.games {
+  margin-top: 50px; }
+  .games .games-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Перенос на новую строку */
+    gap: 40px;
+    /* Отступ между элементами */
+    justify-content: center;
+    /* Центрирование по горизонтали */ }
+    .games .games-list div {
+      width: 30%; }
+      .games .games-list div img {
+        border-radius: 15px; }
 
 /*# sourceMappingURL=style.css.map */

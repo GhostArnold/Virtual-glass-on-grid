@@ -1,0 +1,66 @@
+.shop {
+  margin: 15px 0;
+  margin-bottom: 40px;
+  .cards-grid {
+    // Объявляем грид
+    display: grid;
+    // центрируем
+    place-content: center;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'product1 product1 product2 product3'
+      'product1 product1 product4 product5'
+      'product6 product6 product6 product6'
+      'product6 product6 product6 product6';
+    grid-auto-rows: 180px;
+    .card {
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+
+      &:hover {
+        transform: scale(1.1); /* Увеличивает картинку в 1.1 раза */
+        transition: transform 0.3s ease; /* Плавная анимация */
+      }
+    }
+    .product1 {
+      grid-area: product1;
+      background-image: url(../../img/1.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .product2 {
+      grid-area: product2;
+      background-image: url(../../img/2.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .product3 {
+      grid-area: product3;
+      background-image: url(../../img/3.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .product4 {
+      grid-area: product4;
+      background-image: url(../../img/4.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .product5 {
+      grid-area: product5;
+      background-image: url(../../img/5.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .product6 {
+      grid-area: product6;
+      background-image: url(../../img/women.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}

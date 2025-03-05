@@ -1,0 +1,19 @@
+.footer {
+  border: 1px solid grey;
+  padding: 50px 0;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer__nav {
+      .menu {
+        display: flex;
+        gap: 20px;
+      }
+    }
+    .footer__logo {
+      margin-right: 15%;
+    }
+  }
+}
